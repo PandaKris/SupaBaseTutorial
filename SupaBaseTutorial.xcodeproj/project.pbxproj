@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6702C3CC2CD1D54D00BFB0EC /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 6702C3CB2CD1D54D00BFB0EC /* Auth */; };
+		6702C3CE2CD1D54D00BFB0EC /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 6702C3CD2CD1D54D00BFB0EC /* Functions */; };
+		6702C3D02CD1D54D00BFB0EC /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 6702C3CF2CD1D54D00BFB0EC /* PostgREST */; };
+		6702C3D22CD1D54D00BFB0EC /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 6702C3D12CD1D54D00BFB0EC /* Realtime */; };
+		6702C3D42CD1D54D00BFB0EC /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 6702C3D32CD1D54D00BFB0EC /* Storage */; };
+		6702C3DD2CD1D6E000BFB0EC /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6702C3DC2CD1D6E000BFB0EC /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6702C3B92CD1D48C00BFB0EC /* SupaBaseTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupaBaseTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +32,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6702C3D02CD1D54D00BFB0EC /* PostgREST in Frameworks */,
+				6702C3CE2CD1D54D00BFB0EC /* Functions in Frameworks */,
+				6702C3DD2CD1D6E000BFB0EC /* Supabase in Frameworks */,
+				6702C3CC2CD1D54D00BFB0EC /* Auth in Frameworks */,
+				6702C3D42CD1D54D00BFB0EC /* Storage in Frameworks */,
+				6702C3D22CD1D54D00BFB0EC /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				6702C3BB2CD1D48C00BFB0EC /* SupaBaseTutorial */,
+				6702C3DB2CD1D6E000BFB0EC /* Frameworks */,
 				6702C3BA2CD1D48C00BFB0EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +59,13 @@
 				6702C3B92CD1D48C00BFB0EC /* SupaBaseTutorial.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6702C3DB2CD1D6E000BFB0EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +88,12 @@
 			);
 			name = SupaBaseTutorial;
 			packageProductDependencies = (
+				6702C3CB2CD1D54D00BFB0EC /* Auth */,
+				6702C3CD2CD1D54D00BFB0EC /* Functions */,
+				6702C3CF2CD1D54D00BFB0EC /* PostgREST */,
+				6702C3D12CD1D54D00BFB0EC /* Realtime */,
+				6702C3D32CD1D54D00BFB0EC /* Storage */,
+				6702C3DC2CD1D6E000BFB0EC /* Supabase */,
 			);
 			productName = SupaBaseTutorial;
 			productReference = 6702C3B92CD1D48C00BFB0EC /* SupaBaseTutorial.app */;
@@ -94,6 +123,9 @@
 			);
 			mainGroup = 6702C3B02CD1D48C00BFB0EC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6702C3CA2CD1D54D00BFB0EC /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6702C3BA2CD1D48C00BFB0EC /* Products */;
 			projectDirPath = "";
@@ -249,6 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SupaBaseTutorial/SupaBaseTutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SupaBaseTutorial/Preview Content\"";
@@ -260,6 +293,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SupaBaseTutorial/SupaBaseTutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SupaBaseTutorial/Preview Content\"";
@@ -289,6 +324,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +360,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6702C3CA2CD1D54D00BFB0EC /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6702C3CB2CD1D54D00BFB0EC /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6702C3CA2CD1D54D00BFB0EC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		6702C3CD2CD1D54D00BFB0EC /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6702C3CA2CD1D54D00BFB0EC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		6702C3CF2CD1D54D00BFB0EC /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6702C3CA2CD1D54D00BFB0EC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		6702C3D12CD1D54D00BFB0EC /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6702C3CA2CD1D54D00BFB0EC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		6702C3D32CD1D54D00BFB0EC /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6702C3CA2CD1D54D00BFB0EC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		6702C3DC2CD1D6E000BFB0EC /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6702C3CA2CD1D54D00BFB0EC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6702C3B12CD1D48C00BFB0EC /* Project object */;
 }
